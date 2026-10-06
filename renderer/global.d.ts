@@ -1,0 +1,2 @@
+export {};
+declare global { interface Window { glazeAPI: { nativeTheme: { getInfo():Promise<{themeSource:'system'|'light'|'dark';shouldUseDarkColors:boolean}>; setThemeSource(s:'system'|'light'|'dark'):Promise<boolean>; getShouldUseDarkColors():Promise<boolean>; getThemeSource():Promise<'system'|'light'|'dark'>; }; glaze:{ipc:{invoke<T=unknown>(channel:string,...args:unknown[]):Promise<T>;onNotification(channel:string,cb:(p:unknown)=>void):()=>void;isConnected():boolean;waitForReady():Promise<void>;disconnect():void}}; buildFlavor:string; } } }

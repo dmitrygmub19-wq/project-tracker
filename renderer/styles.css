@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@source "./main/**/*.{ts,tsx}";
+@source "./settings/**/*.{ts,tsx}";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --color-gray-1:#fcfcfc; --color-gray-3:#f0f0f0; --color-gray-8:#b4b4b4; --color-gray-9:#8d8d8d; --color-gray-10:#7d7d7d; --color-gray-11:#646464; --color-gray-12:#202020;
+  --color-gray-a2:rgba(0,0,0,.02); --color-gray-a3:rgba(0,0,0,.04); --color-gray-a6:rgba(0,0,0,.12); --color-gray-a11:rgba(0,0,0,.62); --color-gray-a12:rgba(0,0,0,.88);
+  --color-blue-3:#e6f4fe; --color-blue-9:#0090ff; --color-blue-10:#0588f0; --color-blue-11:#0d74ce;
+  --color-blue-a3:rgba(0,144,255,.12);
+  --color-green-3:#e9f9ee; --color-green-9:#30a46c; --color-green-11:#218358;
+  --color-orange-3:#ffefd6; --color-orange-9:#f76b15; --color-orange-11:#cc4e00;
+  --color-red-8:#e5484d; --color-red-9:#e5484d; --color-red-10:#dc3e42; --color-red-a2:rgba(229,72,77,.08);
+  --color-amber-10:#ce9a00; --color-amber-11:#ce9a00; --color-amber-a2:rgba(206,154,0,.08);
+}
+.dark {
+  color-scheme: dark;
+  --color-gray-1:#111113; --color-gray-3:#242426; --color-gray-8:#68686b; --color-gray-9:#77777a; --color-gray-10:#828286; --color-gray-11:#b0b0b5; --color-gray-12:#eeeeef;
+  --color-gray-a2:rgba(255,255,255,.03); --color-gray-a3:rgba(255,255,255,.06); --color-gray-a6:rgba(255,255,255,.13); --color-gray-a11:rgba(255,255,255,.68); --color-gray-a12:rgba(255,255,255,.9);
+  --color-blue-3:#102b40; --color-blue-9:#0090ff; --color-blue-10:#3b9eff; --color-blue-11:#70b8ff; --color-blue-a3:rgba(0,144,255,.2);
+  --color-green-3:#123126; --color-green-9:#30a46c; --color-green-11:#3dd68c;
+  --color-orange-3:#3a2515; --color-orange-9:#f76b15; --color-orange-11:#ff8b3e;
+  --color-red-8:#ff6369; --color-red-9:#ff6369; --color-red-10:#ff7478; --color-red-a2:rgba(255,99,105,.12);
+  --color-amber-10:#ffb224; --color-amber-11:#ffca16; --color-amber-a2:rgba(255,178,36,.12);
+}
+html,body,#root{height:100%;margin:0} body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#fff;color:#202020}.dark body{background:#111113;color:#eeeeef}.drag-region{-webkit-app-region:drag}.drag-region button,.drag-region input{-webkit-app-region:no-drag}

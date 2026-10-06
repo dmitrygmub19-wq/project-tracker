@@ -1,0 +1,55 @@
+{
+  "id": "mnkpgr3u",
+  "name": "project-board",
+  "version": "1.0.0",
+  "productName": "Project Board",
+  "description": "Track team projects and tasks by person with weekly updates and status management",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "vite build && node scripts/build-main.mjs",
+    "type-check": "tsc --noEmit",
+    "start": "electron build/main/index.js"
+  },
+  "dependencies": {
+    "@radix-ui/colors": "^3.0.0",
+    "@tanstack/react-query": "^5.87.4",
+    "@tanstack/react-router": "^1.131.36",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cmdk": "^1.1.1",
+    "lucide-react": "^0.542.0",
+    "radix-ui": "^1.4.3",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.3.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@tailwindcss/vite": "^4.1.13",
+    "@types/node": "^24.3.1",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "esbuild": "^0.25.12",
+    "eslint": "^9.39.2",
+    "eslint-plugin-import": "^2.31.0",
+    "globals": "^17.3.0",
+    "oxfmt": "^0.26.0",
+    "tailwindcss": "^4.1.13",
+    "tsx": "^4.20.5",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.4",
+    "electron": "^38.2.1"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "build/main/index.js"
+}
